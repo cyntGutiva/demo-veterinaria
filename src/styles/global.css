@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Pastel Clínica */
+  --color-pastel-bg: #F0F7FF; 
+  --color-primary: #0052FF;
+  --color-primary-dark: #003DCC;
+  
+  /* Tipografía */
+  --font-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui;
+  
+  /* Sombras Especiales */
+  --shadow-card: 0 20px 40px -15px rgba(0, 82, 255, 0.08);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-pastel-bg);
+    @apply font-jakarta antialiased text-slate-900;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 px-[5%] lg:px-[10%];
+  }
+}

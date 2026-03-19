@@ -1,0 +1,24 @@
+<header class="section-padding grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div>
+        <div class="inline-block bg-blue-100 text-primary font-extrabold text-xs px-4 py-1.5 rounded-full mb-6 tracking-widest">CLÍNICA PROFESIONAL</div>
+        <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.05] mb-8 tracking-tighter">
+            Tu mascota en <br><span class="text-primary italic">buenas manos.</span>
+        </h1>
+        <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-md">
+            Excelencia médica veterinaria con un enfoque cálido y moderno para los miembros más peludos de tu familia.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-2xl font-extrabold shadow-xl shadow-blue-200 hover:-translate-y-1 transition-all">AGENDAR CITA</a>
+            <div class="flex items-center gap-3 px-4">
+                <div class="flex -space-x-2">
+                    {[1,2,3].map(() => <div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200"></div>)}
+                </div>
+                <span class="text-sm font-bold text-slate-700">+2k Dueños Felices</span>
+            </div>
+        </div>
+    </div>
+    <div class="relative group">
+        <div class="absolute -inset-4 bg-white/50 rounded-[3rem] blur-2xl group-hover:bg-blue-200/50 transition-colors"></div>
+        <img src="images/hero.png" class="relative w-full rounded-[2.5rem] shadow-card border-8 border-white" alt="Doctor" />
+    </div>
+</header>

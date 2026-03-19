@@ -1,0 +1,26 @@
+---
+const services = [
+    { title: "Consulta", desc: "Medicina preventiva avanzada.", price: "$15.000" },
+    { title: "Vacunas", desc: "Inmunización certificada.", price: "Desde $10.000" },
+    { title: "Cirugía", desc: "Quirófano de alta tecnología.", price: "Consultar" },
+    { title: "Urgencias", desc: "Atención crítica inmediata.", price: "24/7" },
+];
+import PawIcon from '../components/icons/PawIcon.astro';
+---
+<section id="servicios" class="section-padding">
+    <h2 class="text-3xl font-extrabold mb-12 text-center">Excelencia Médica</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {services.map(s => (
+            <div class="p-8 rounded-[2.5rem] bg-white border border-blue-50/50 shadow-card hover:border-primary/30 hover:-translate-y-2 transition-all group">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl mb-6 flex items-center justify-center text-primary group-hover:text-white transition-colors font-bold">
+                    <nav class="flex items-center gap-2">
+                        <PawIcon class="w-10 h-10 md:w-12 md:h-12" />
+                    </nav>
+                </div>
+                <h3 class="text-xl font-bold mb-2">{s.title}</h3>
+                <p class="text-slate-500 text-sm mb-6 leading-relaxed">{s.desc}</p>
+                <div class="text-primary font-extrabold">{s.price}</div>
+            </div>
+        ))}
+    </div>
+</section>
