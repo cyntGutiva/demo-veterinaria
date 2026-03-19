@@ -5,6 +5,8 @@ import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
 import Gallery from '../components/Gallery.astro';
 import Contact from '../components/Contact.astro';
+import GoogleRating from '../components/GoogleRating.astro';
+import ReviewCard from '../components/ReviewCard.astro';
 ---
 <Layout title="HealthyPet | Cuidado Pro">
     <Navbar />
@@ -12,4 +14,27 @@ import Contact from '../components/Contact.astro';
     <Services />
     <Gallery />
     <Contact />
+    <!-- <GoogleRating /> -->
+    <!-- <section class="py-24 bg-blue-50/50">
+        <div class="swiper mySwiper px-8">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><ReviewCard ... /></div>
+            <div class="swiper-slide"><ReviewCard ... /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section> -->
 </Layout>
+<!-- 
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script is:inline>
+  new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: { el: ".swiper-pagination", clickable: true },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script> -->
