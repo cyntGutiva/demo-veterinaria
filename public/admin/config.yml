@@ -1,0 +1,26 @@
+# public/admin/config.yml
+backend:
+  name: git-gateway
+  branch: main # Tu rama principal
+
+media_folder: "public/assets/services" # Donde se guardarán las fotos
+public_folder: "/assets/services"
+
+collections:
+  - name: "services"
+    label: "Servicios Médicos"
+    folder: "src/content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Precio", name: "price", widget: "number" }
+      - { label: "Emoji/Icono", name: "icon", widget: "string" }
+      - {
+          label: "Orden de aparición",
+          name: "order",
+          widget: "number",
+          default: 0,
+        }
+      - { label: "Cuerpo del texto", name: "body", widget: "markdown" }
