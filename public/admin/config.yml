@@ -1,14 +1,16 @@
-# public/admin/config.yml
 backend:
-  name: git-gateway
-  branch: main # Tu rama principal
+  name: github
+  repo: cyntGutiva/demo-veterinaria
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
-media_folder: "public/assets/services" # Donde se guardarán las fotos
-public_folder: "/assets/services"
+media_folder: public/images
+public_folder: /images
 
 collections:
   - name: "services"
-    label: "Servicios Médicos"
+    label: "Servicios"
     folder: "src/content/services"
     create: true
     slug: "{{slug}}"
@@ -16,11 +18,5 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Descripción", name: "description", widget: "text" }
       - { label: "Precio", name: "price", widget: "number" }
-      - { label: "Emoji/Icono", name: "icon", widget: "string" }
-      - {
-          label: "Orden de aparición",
-          name: "order",
-          widget: "number",
-          default: 0,
-        }
-      - { label: "Cuerpo del texto", name: "body", widget: "markdown" }
+      - { label: "Ícono", name: "icon", widget: "string", required: false }
+      - { label: "Orden", name: "order", widget: "number", default: 0 }
