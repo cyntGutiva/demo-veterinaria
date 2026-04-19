@@ -2,7 +2,7 @@ backend:
   name: github
   repo: cyntGutiva/demo-veterinaria
   branch: master
-  base_url: https://api.netlify.com
+  base_url: demo-veterinary.netlify.app
   auth_endpoint: auth
 
 media_folder: public/images
