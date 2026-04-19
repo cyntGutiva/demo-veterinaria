@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /demoveterinaria.yourbusinessweb.com/public_html/
+          server-dir: /public_html/
