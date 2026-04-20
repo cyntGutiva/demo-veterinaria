@@ -1,6 +1,6 @@
 ---
-title: "Consulta Veterinaria Élite 1"
-description: "Revisión completa, diagnóstico preventivo y plan de salud personalizado."
+title: Consulta Veterinaria animales exoticos 1
+description: Revisión completa, diagnóstico preventivo y plan de salud personalizado.
 price: 25000
 icon: ""
 order: 1
