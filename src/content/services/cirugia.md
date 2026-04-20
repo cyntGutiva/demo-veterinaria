@@ -1,7 +1,7 @@
 ---
-title: "Consulta Veterinaria Élite 4"
-description: "Revisión completa, diagnóstico preventivo y plan de salud personalizado."
-price: 25000
+title: Consulta Veterinaria Élite 4
+description: Revisión completa, diagnóstico preventivo y plan de salud personalizado.
+price: -10000
 icon: ""
 order: 4
 ---
